@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <h2>Login Page</h2>
+  </div>
+  <div class="row">
+    <div class="form-group">
+      <label for="usr">User Id</label>
+
+      <input type="text" id="usr" class="form-control" [(ngModel)]="userId">
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" class="form-control" [(ngModel)]="password">
+    </div>
+  </div>
+  <div class="row">
+    <input type="button" (click)="onLoginClick()" class="btn" value="Login">
+  </div>
+</div>
+
+<!--
+<p>
+
+  {{userId}} {{userName}}
+</p>
+<a [routerLink]="['/account']">Department</a>-->

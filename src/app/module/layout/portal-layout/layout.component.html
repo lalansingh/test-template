@@ -1,0 +1,27 @@
+<table class="container border">
+  <tr>
+    <td colspan="2" class="border">
+      <app-header></app-header>
+    </td>
+  </tr>
+  <tr>
+    <td class="border">
+      <div class="sidenav">
+        <ul>
+          <li><a [routerLink]="['/about']">About</a></li>
+          <li><a [routerLink]="['/client']">Clients</a></li>
+          <li><a [routerLink]="['/contact']">Contact</a></li>
+           <li><a [routerLink]="['/custom-twoway-binding']">Custom Two way Binding</a></li>
+        </ul>
+      </div>
+    </td>
+    <td class="border">
+      <router-outlet></router-outlet>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="border">
+      <app-footer></app-footer>
+    </td>
+  </tr>
+</table>

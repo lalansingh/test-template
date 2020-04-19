@@ -1,0 +1,23 @@
+<p>
+  about-us works!
+</p>
+<div>
+  <!--<ul>
+    <li *ngFor="let hero of heroModel">{{hero.name}}</li>
+  </ul>-->
+  <p>
+    selected value from dropdown {{heroSelectedModel}}
+  </p>
+  <p>
+    <select class='select-option' [(ngModel)]="heroSelectedModel">
+    <option [value]="0">Select</option>
+    <option class='option' *ngFor="let he of heroModel" [value]="he.id" >{{he.name}}</option>
+  </select>
+  </p>
+  <p>
+    *ngIf else and then
+  </p>
+  <div *ngIf="conditionFlag; then ifcndsn else elscndsn"></div>
+    <ng-template #ifcndsn> if statement</ng-template>
+    <ng-template #elscndsn> else statement</ng-template>
+</div>
